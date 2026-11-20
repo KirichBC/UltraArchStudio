@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowsPerformanceRecorder Version="1.0" Author="UltraArch benchmark">
+  <Profiles>
+    <SystemCollector Id="ProcessCollector" Name="UltraArch process events">
+      <BufferSize Value="64"/>
+      <Buffers Value="128"/>
+    </SystemCollector>
+    <SystemProvider Id="ProcessProvider">
+      <Keywords><Keyword Value="ProcessThread"/></Keywords>
+    </SystemProvider>
+    <Profile Id="ProcessEvents.Verbose.File" Name="ProcessEvents" Description="Process lifetime events without CPU sampling or stacks" LoggingMode="File" DetailLevel="Verbose">
+      <Collectors>
+        <SystemCollectorId Value="ProcessCollector">
+          <SystemProviderId Value="ProcessProvider"/>
+        </SystemCollectorId>
+      </Collectors>
+    </Profile>
+  </Profiles>
+</WindowsPerformanceRecorder>

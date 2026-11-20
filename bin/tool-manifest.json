@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "verifiedOn": "2026-10-09",
+  "tools": [
+    {
+      "file": "7z.dll",
+      "version": "26.04",
+      "sha256": "899cd73d7fc60e1c1c35c7de0f5bed3dc69bfe2cecbd48014d868a347970a0b1",
+      "source": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-x64.exe",
+      "sourceAssetSha256": "d54bf805f9f3704d1e8db2fa3498ae7ef2df0312b40b558e7c71c734430a665d",
+      "license": "licenses/7zip-license.txt",
+      "provenance": "byte-identical to official release asset",
+      "authenticode": "requires Windows signature inspection",
+      "capabilities": "runtime smoke cached by EXE/DLL SHA-256"
+    },
+    {
+      "file": "7z.exe",
+      "version": "26.04",
+      "sha256": "95fff19b73eff77c87c0d7bd32822e43fb90dd2932459f962eb532d8dfb6ba53",
+      "source": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-x64.exe",
+      "sourceAssetSha256": "d54bf805f9f3704d1e8db2fa3498ae7ef2df0312b40b558e7c71c734430a665d",
+      "license": "licenses/7zip-license.txt",
+      "provenance": "byte-identical to official release asset",
+      "authenticode": "requires Windows signature inspection",
+      "capabilities": "runtime smoke cached by EXE/DLL SHA-256"
+    },
+    {
+      "file": "7z.sfx",
+      "version": "26.04",
+      "sha256": "bdf3860863e383f2af8dda02026d81b4949a5a0956c160b5eef4ad2fc5a7560f",
+      "source": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-x64.exe",
+      "sourceAssetSha256": "d54bf805f9f3704d1e8db2fa3498ae7ef2df0312b40b558e7c71c734430a665d",
+      "license": "licenses/7zip-license.txt",
+      "provenance": "byte-identical to official release asset",
+      "authenticode": "requires Windows signature inspection",
+      "capabilities": "runtime smoke cached by EXE/DLL SHA-256"
+    },
+    {
+      "file": "7zCon.sfx",
+      "version": "26.04",
+      "sha256": "cef0997a4d8497869b211ce3471d9664a9413ed58ed261032627f68627fce5e0",
+      "source": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-x64.exe",
+      "sourceAssetSha256": "d54bf805f9f3704d1e8db2fa3498ae7ef2df0312b40b558e7c71c734430a665d",
+      "license": "licenses/7zip-license.txt",
+      "provenance": "byte-identical to official release asset",
+      "authenticode": "requires Windows signature inspection",
+      "capabilities": "runtime smoke cached by EXE/DLL SHA-256"
+    },
+    {
+      "file": "7za.exe",
+      "version": "26.04",
+      "sha256": "15d4c788c148e3677e2fc1c4a01f191fb6669eba4f6acf8a465f0f1a6f1e1260",
+      "source": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-extra.7z",
+      "sourceAssetSha256": "dc4b11d3399db18b063630137145f5585d8f7ac847bf3639bd1185d7d1f7cee0",
+      "license": "licenses/7zip-license.txt",
+      "provenance": "byte-identical to official release asset",
+      "authenticode": "requires Windows signature inspection",
+      "capabilities": "runtime smoke cached by EXE/DLL SHA-256"
+    },
+    {
+      "file": "ect.exe",
+      "version": "0.9.5",
+      "sha256": "4ff4d81950f88c2cf734a5a845c00ca3c52950f68b6588a3e803a37b03ac54b2",
+      "source": "https://github.com/fhanau/Efficient-Compression-Tool/releases/download/v0.9.5/ect-0.9.5-win64.zip",
+      "sourceAssetSha256": "9218661a91fd939668e2033f77eddb7db513286e1c91e6fe62013a40c27c21ba",
+      "license": "licenses/ECT-Apache-2.0.txt",
+      "provenance": "byte-identical to official release asset",
+      "authenticode": "requires Windows signature inspection",
+      "capabilities": "runtime smoke cached by EXE/DLL SHA-256"
+    },
+    {
+      "file": "leanify.exe",
+      "version": "0.4.3",
+      "sha256": "03d482cab7ec1169bb701ecaabacfe9fffd578c56c607db092e97a772020cfed",
+      "source": "https://github.com/JayXon/Leanify/releases/download/v0.4.3/Leanify_win64.7z",
+      "sourceAssetSha256": "e6d0552e5d3fceb7d603cc2b2fae65c7e4f5cfb9915882842363699f3245d744",
+      "license": "licenses/Leanify-MIT.txt",
+      "provenance": "byte-identical to official release asset",
+      "authenticode": "requires Windows signature inspection",
+      "capabilities": "runtime smoke cached by EXE/DLL SHA-256"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+name: Windows build and tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  windows:
+    runs-on: windows-2022
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure MSVC x64
+        run: cmake -S . -B build-ci -A x64 -DULTRAARCH_REQUIRE_TOOLS=ON
+      - name: Build
+        run: cmake --build build-ci --config ${{ matrix.configuration }} --parallel 4
+      - name: Unit and real-tool integration tests
+        run: ctest --test-dir build-ci -C ${{ matrix.configuration }} --output-on-failure
+      - name: Package portable Windows application
+        if: matrix.configuration == 'Release'
+        shell: pwsh
+        run: ./tools/package.ps1 -BuildDirectory build-ci -Configuration Release -Destination release-ci
+      - name: Installed package smoke
+        if: matrix.configuration == 'Release'
+        shell: pwsh
+        run: ./tools/windows-smoke.ps1 -PackageDirectory release-ci/developer
+      - name: Controlled publication crash tests
+        if: matrix.configuration == 'Debug'
+        shell: pwsh
+        run: |
+          cmake -S . -B build-fault-ci -A x64 -DULTRAARCH_FAULT_INJECTION=ON -DULTRAARCH_REQUIRE_TOOLS=ON
+          if ($LASTEXITCODE) { throw 'Fault configure failed' }
+          cmake --build build-fault-ci --config Debug --parallel 4
+          if ($LASTEXITCODE) { throw 'Fault build failed' }
+          ctest --test-dir build-fault-ci -C Debug --output-on-failure
+          if ($LASTEXITCODE) { throw 'Fault tests failed' }
+      - uses: actions/upload-artifact@v4
+        if: matrix.configuration == 'Release'
+        with:
+          name: UltraArchStudio-Win64
+          path: release-ci
+          if-no-files-found: error

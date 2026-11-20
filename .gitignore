@@ -1,0 +1,18 @@
+/build*/
+/release*/
+/.ultraarch_tmp/
+/sessions/
+session_*.json
+*.obj
+*.pdb
+.DS_Store
+crash_log.txt
+
+/payload.7z
+__pycache__/
+*.pyc
+/benchmark-results*/
+
+# Local runtime settings and diagnostics
+/imgui.ini
+/ui_debug.log

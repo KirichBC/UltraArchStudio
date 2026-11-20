@@ -1,0 +1,4 @@
+Source: https://github.com/JayXon/Leanify/blob/v0.4.3/lib/LZMA/LzmaEnc.c
+
+/* LzmaEnc.c -- LZMA Encoder
+2015-11-08 : Igor Pavlov : Public domain */

@@ -1,0 +1,20 @@
+{
+  "verifiedOn": "2026-10-05",
+  "notices": [
+    {
+      "file": "mozjpeg-LICENSE.md",
+      "url": "https://raw.githubusercontent.com/mozilla/mozjpeg/182457e3e26e1e078d5dbd09137cf04865be2e49/LICENSE.md",
+      "sha256": "60c756742db3ad1913304e8b13f0e86e22e51adb50cc0b3333c163f7e45ceec1"
+    },
+    {
+      "file": "mozjpeg-README.ijg",
+      "url": "https://raw.githubusercontent.com/fhanau/mozjpeg/182457e3e26e1e078d5dbd09137cf04865be2e49/README.ijg",
+      "sha256": "4b7b9f8c03bb8d60270dfd12684e70ab21e4abfd27e73905cd1a7c4cae6f5cdb"
+    },
+    {
+      "file": "libpng-LICENSE",
+      "url": "https://raw.githubusercontent.com/glennrp/libpng/f135775ad4e5d4408d2e12ffcc71bb36e6b48551/LICENSE",
+      "sha256": "5c0bb4b05b1354ae7c173532b6702ea68b611047ff9b91c4d3af77da39c195d9"
+    }
+  ]
+}

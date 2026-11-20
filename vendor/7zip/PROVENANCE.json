@@ -1,0 +1,22 @@
+{
+  "version": "26.04",
+  "source": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-src.tar.xz",
+  "sourceSha256": "9691944c0fe0d01bb49373a704fb983fd33bc98b1738695179dfbf99ac1734f6",
+  "files": {
+    "C/7zTypes.h": "126c3ce886391042443fcc82764d26be7aacda2298588c6ec9bb7ce8c7b47732",
+    "C/7zWindows.h": "228be01470e87c8cee44ee2e6c1cc2a431ed26ec3a325edfbaa166b7ef4f492e",
+    "C/Compiler.h": "cfafaa89ba98a7f4f38cc589533fc03facb98ae1176dfe29d58217767ed5f149",
+    "CPP/7zip/Archive/IArchive.h": "a10f38d599dad4926e2f219a577e3b11aa7214d1b4a02fa88ed9c71a5047caec",
+    "CPP/7zip/IDecl.h": "12fe252528026ab6676e6ffd94c6cea7af3ebf0df0cc80a142ec526ba6f85ee5",
+    "CPP/7zip/IPassword.h": "2e84e7c3c0f83fd968c1c01df8a0f0153b2af4548a40d837e4d6b001c7e34cb9",
+    "CPP/7zip/IProgress.h": "ada30dbfd40a0433d2b0bac75dd4fb0e323789292503397d806b39c71281d639",
+    "CPP/7zip/IStream.h": "c0c8f8df90ec555b5fb73658638edcaf2029c684d7e0a341d048008b5b25bd47",
+    "CPP/7zip/PropID.h": "9a818538a047edf80583a479436b49575dd0c18b5ed7148574a24c5b67bfc53d",
+    "CPP/Common/Common0.h": "10710339da1d415fbae04f9555908ba302f95bbf821d3f8970428374c733ca44",
+    "CPP/Common/MyGuidDef.h": "3753ceb20565adb88122e17c673f9656571b048fc5f7d731bab063bbd7a361ca",
+    "CPP/Common/MyTypes.h": "597c9a1d40430f28295054954c696a683152975967055d799efb0333d74c486d",
+    "CPP/Common/MyUnknown.h": "f48b88ba839907c657aed27b0879e3117a47962136a0f1b0774b68f760588a8c",
+    "CPP/Common/MyWindows.h": "460e2dbf702b7ef78a7bf45c6590cec52fbb1f5863eff09765268b788e85ed53",
+    "CPP/Common/NewHandler.h": "3dbfffb27dccf5d4fb839aa570b984abfdb8656d0cc830e8cdf7446602790a46"
+  }
+}

@@ -1,0 +1,6 @@
+* text=auto
+*.ps1 text eol=lf
+*.sh text eol=lf
+bin/** -text
+vendor/7zip/** -text
+vendor/imgui/** -text
